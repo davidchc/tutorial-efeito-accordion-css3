@@ -1,0 +1,28 @@
+.accordions{
+      width:600px;
+      margin:0 auto;
+      border:1px solid #ccc;
+}
+
+.accordion-item input{display:none;}
+
+.accordion-item label{
+      display:block;
+      border:1px solid #ccc;
+      background:#e5e5e5;
+      cursor:pointer;
+	  padding:5px 3px;
+}
+
+.accordion-content{
+      height: 0px;
+      overflow: hidden;
+      -webkit-transition: height 0.3s ease-in-out;
+      -moz-transition: height 0.3s ease-in-out;
+      -o-transition: height 0.3s ease-in-out;
+      -ms-transition: height 0.3s ease-in-out;
+      transition: height 0.3s ease-in-out;
+  }
+[id^=accordion]:checked ~ .accordion-content {
+      height: 100px;
+}
